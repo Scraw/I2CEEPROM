@@ -70,7 +70,7 @@
    char cadena[] = "hola mundo desde una eeprom"; // cadena a escribir
    Wire.begin(); // es obligatorio inicializar la conexion
    Serial.begin(9600);
-   //I2C_eeprom_write_page(0x50, 0, (byte *)cadena, sizeof(cadena)); // escribir la cadena al 
+   I2C_eeprom_write_page(0x50, 0, (byte *)cadena, sizeof(cadena)); // escribir la cadena al 
    // principio de la EEPROM; comentar esta línea para probar que la memoria es no volátil
    delay(10); //pequeña pausa despues de escribir en la memoria
   }
